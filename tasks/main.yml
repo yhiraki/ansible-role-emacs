@@ -1,4 +1,8 @@
 ---
+- fail:
+    msg: OS is Unsupported.
+  when: ansible_facts['os_family'] != "Debian"
+
 - name: Install build depends
   apt:
     pkg:
