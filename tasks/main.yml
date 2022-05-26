@@ -20,7 +20,7 @@
 
 - name: Build emacs
   shell: |
-    ./configure --prefix {{ install_prefix }}
+    ./configure --prefix {{ install_prefix }} {{ build_options }}
     make
   args:
     chdir: "{{ work_dir }}/emacs-{{ emacs_version }}"
