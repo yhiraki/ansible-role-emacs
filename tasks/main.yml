@@ -1,14 +1,6 @@
 ---
-- fail:
-    msg: OS is Unsupported.
-  when: ansible_facts['os_family'] != "Debian"
-
 - name: Install build depends
-  apt:
-    pkg:
-      - gcc
-      - make
-      - ncurses-dev
+  include_tasks: "build_depends_{{ ansible_pkg_mgr }}.yaml"
 
 - name: Download emacs
   shell: |

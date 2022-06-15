@@ -1,0 +1,6 @@
+- name: Install build depends
+  apt:
+    pkg:
+      - gcc
+      - make
+      - ncurses-dev
