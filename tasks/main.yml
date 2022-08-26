@@ -21,7 +21,7 @@
 - name: Install emacs
   shell: |
     make install
-  become: yes
+  become: "{{ sudo_install }}"
   args:
     chdir: "{{ work_dir }}/emacs-{{ emacs_version }}"
     creates: "{{ install_prefix }}/bin/emacs"

@@ -1,5 +1,8 @@
 - name: Install build depends
   homebrew:
     name:
-      - gcc
-      - make
+      - autoconf
+      - automake
+      - gnutls
+      - pkg-config
+      - texinfo

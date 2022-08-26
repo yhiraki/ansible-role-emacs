@@ -1,6 +1,6 @@
 ---
+build_options:
 emacs_version: 28.1
 install_prefix: /usr/local
+sudo_install: yes
 work_dir: /tmp
-build_options:
-
